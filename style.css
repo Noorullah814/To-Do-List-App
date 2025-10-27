@@ -1,0 +1,135 @@
+.complete{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #1b1d1d, #000000);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+
+.title {
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 890px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f1f1f3, #0d0e13); 
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 2px 8px rgb(255, 253, 253);
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #cbc4ec, #dbddeb);
+  box-shadow: 0 2px 6px rgba(248, 245, 245, 0.945);
+}
+
+.container{
+   
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 20px 0;
+}
+
+.container input{
+    background-color: white;
+    border-radius: 2px;
+    border: 3px solid gray;
+}
+
+input::placeholder{
+    color: black;
+    padding-left: px;
+    opacity: 0.8;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.taskItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border-left: 6px solid #0c0c0c;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.editBtn, .deleteBtn {
+  background-color: #ffffff;
+  color: rgb(15, 15, 15);
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editBtn:hover {
+  background-color: #3a3939d0;
+}
+
+.deleteBtn:hover {
+  background-color: #dc3545;
+}
+
+.errorMsg{
+    color: #dc3545;
+}
+
+
+@media(max-width:720px) {
+  html, body {
+  overflow: hidden;
+  height: 100%;
+   }
+    .title{
+      color: #fff;
+      text-align: center;
+      max-width:70%;
+      overflow: hidden;
+    }
+    .main_container{
+      max-width: 70%;
+      overflow: hidden;
+    }
+    .filter{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
